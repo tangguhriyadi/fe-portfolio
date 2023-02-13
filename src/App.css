@@ -21,7 +21,7 @@ body {
 
 .mainLayout .ant-layout-header {
   background: #f8f8f8;
-  padding: 0;
+  padding: 15px;
   height: auto;
   line-height: 1.6;
 }
