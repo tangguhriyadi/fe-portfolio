@@ -1,5 +1,6 @@
 import React from 'react'
 import AppAbout from '../home/AppAbout'
+import AppContact from '../home/AppContact'
 import AppFaq from '../home/AppFaq'
 import AppFeature from '../home/AppFeature'
 import AppHero from '../home/AppHero'
@@ -15,6 +16,7 @@ const AppHome:React.FC = () => {
         <AppWorks />
         <AppFaq />
         <AppPricing />
+        <AppContact />
     </div>
   )
 }
