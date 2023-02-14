@@ -3,7 +3,6 @@ import React from 'react';
 /* import logo from './logo.svg'; */
 import './App.css';
 import AppHeader from './components/common/AppHeader';
-import AppFeature from './components/home/AppFeature';
 import AppHome from './components/views/AppHome';
 
 const {Header, Content} = Layout
@@ -16,7 +15,6 @@ function App() {
       </Header>
       <Content>
         <AppHome />
-        <AppFeature />
       </Content>
     </Layout>
   );
