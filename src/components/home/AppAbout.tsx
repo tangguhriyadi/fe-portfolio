@@ -35,7 +35,7 @@ const items:Item[] = [
 
 const AppAbout: React.FC = () => {
   return (
-    <div className="block aboutBlock">
+    <div id="about" className="block aboutBlock">
       <div className="container-fluid">
         <div className="titleHolder">
           <h2>About Me</h2>

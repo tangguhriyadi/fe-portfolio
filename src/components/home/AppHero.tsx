@@ -21,7 +21,7 @@ const items = [
 
 const AppHero: React.FC = () => {
   return (
-    <div className="heroBlock">
+    <div id="hero" className="heroBlock">
       <Carousel>
         {items.map(item => (
           <div key={item.key} className="container-fluid">
