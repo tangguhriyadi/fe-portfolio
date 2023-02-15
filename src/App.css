@@ -479,4 +479,13 @@ responsive
   .mobileHidden {
     display: none;
   }
+  :where(.css-dev-only-do-not-override-j0nf2s).ant-anchor-wrapper:not(.ant-anchor-horizontal) .ant-anchor::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-inline-start: 2px solid rgba(5, 5, 5, 0.06);
+    content: " ";
+    opacity: 1 !important;
+  }
 }

@@ -54,7 +54,7 @@ const AppAbout: React.FC = () => {
         </div>
         <Row gutter={[16, 16]}>
           {items.map((item) => (
-            <Col span={8} key={item.key}>
+            <Col key={item.key} md={{span:8}} >
               <div className="content">
                 <div className="icon">{item.icon}</div>
               </div>
