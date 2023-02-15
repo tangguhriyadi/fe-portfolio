@@ -1,8 +1,8 @@
-import { Menu } from "antd";
 import React from "react";
+import { Anchor } from 'antd';
 
 const AppHeader = () => {
-  const contentHeader = ["Home", "About", "Experiences", "Contact"];
+  const contentHeader = ["Hero", "About", "Features", "How It Works", "FAQ", "Pricing", "Contact"];
   return (
     <div className="container-fluid">
       <div className="header">
@@ -10,17 +10,19 @@ const AppHeader = () => {
           <i className="fas fa-bolt"></i>
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">TECH</a>
         </div>
-        <Menu
-          mode="horizontal"
-          defaultSelectedKeys={["home"]}
-          items={contentHeader.map((i) => {
-            const key = i.toLocaleLowerCase();
-            return {
-              key,
-              label: i,
-            };
-          })}
-        />
+         <Anchor
+         
+         affix={false}
+         direction="horizontal"
+        items={contentHeader.map((i) => {
+          const key = i.toLocaleLowerCase();  
+          return {
+            key,
+            href: `#${key}`,
+            title:i === "Hero" ? "Home" : i
+          };
+        })}
+      />
       </div>
     </div>
   );
